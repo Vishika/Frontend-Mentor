@@ -47,12 +47,15 @@ body {
   border-radius: var(--radius);
 }
 
-.icon {
+.icon-bubble {
   background-color: var(--medium-dark-grey);
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  padding: 1.5rem;
+}
+
+.icon {
+  padding: 1.6rem;
 }
 
 .rating-title {
@@ -60,23 +63,30 @@ body {
 }
 
 .rating-description {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .ratings {
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
-.ratings li {
+.rating {
   background-color: var(--medium-dark-grey);
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.rating-text {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -17%);
 }
 
 .btn {
@@ -86,6 +96,7 @@ body {
   border-radius: var(--radius);
   padding: 1.5rem;
   text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 0.2rem;
   color: var(--white);
 }
